@@ -2,8 +2,11 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "../../assets/images/banner.png";
 import Type from "./Type";
 import toast from "react-hot-toast";
+import DaftarModal from "../modal/DaftarModal"; // Import modal
 
 const Banner = () => {
+  const [isDaftarModalOpen, setIsDaftarModalOpen] = useState(false);
+
   const [isVisible, setIsVisible] = useState({ title: false, image: false });
   const titleRef = useRef(null);
   const imageRef = useRef(null);
@@ -50,8 +53,8 @@ const Banner = () => {
     };
   }, []);
 
-  const handleClick = (event) => {
-    event.preventDefault(); // Prevents navigation
+  const handleDaftar = () => {
+    // event.preventDefault(); // Prevents navigation
     toast.error("Pendaftaran belum dibuka");
   };
 
@@ -71,21 +74,9 @@ const Banner = () => {
           <div className="max-w-[440px] text-2xl font-medium mb-8 text-blue-500">
             <Type />
           </div>
-          {/* <Link
-            to="#"
-            onClick={handleClick}
-            className="relative inline-flex items-center justify-start px-5 py-3 overflow-hidden font-bold rounded-full group cursor-pointer"
-          >
-            <span className="w-40 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-blue-600 opacity-[3%]"></span>
-            <span className="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-blue-600 opacity-100 group-hover:-translate-x-8"></span>
-            <span className="relative w-full text-left text-gray-900 dark:text-gray-100 transition-colors duration-200 ease-in-out group-hover:text-gray-100">
-              Register Now
-            </span>
-            <span className="absolute inset-0 border-2 border-blue-600 rounded-full"></span>
-          </Link> */}
           <button
-            onClick={handleClick}
-            className="relative px-6 py-2 border-4 rounded-lg bg-white text-gray-950 font-semibold hover:bg-gray-300 dark:hover:bg-gray-900 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-300 animate-border-animate border-transparent"
+            onClick={handleDaftar()}
+            className="relative px-6 py-2 border-2 rounded-lg bg-white text-gray-950 font-semibold dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-300 animate-border-animate border-transparent shadow-lg shadow-blue-500/50 hover:shadow-blue-700/80 dark:hover:shadow-blue-500/70"
           >
             Daftar Sekarang
           </button>
@@ -99,6 +90,7 @@ const Banner = () => {
           <img src={Image} alt="Banner" className="max-w-full h-auto object-cover lg:w-[80%]" />
         </div>
       </div>
+      <DaftarModal isOpen={isDaftarModalOpen} onClose={() => setIsDaftarModalOpen(false)} />
     </section>
   );
 };
