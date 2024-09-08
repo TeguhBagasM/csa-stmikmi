@@ -120,7 +120,7 @@ const Header = () => {
 
           <button
             onClick={handleFollow}
-            className="hidden md:flex items-center bg-blue-600 text-white py-2 px-3 rounded-md shadow-md hover:bg-blue-700 transition-colors duration-200"
+            className="hidden md:flex items-center bg-blue-600 text-white py-2 px-3 rounded-xl shadow-md hover:bg-blue-700 transition-colors duration-200"
           >
             <FaInstagram className="text-xl mr-2" />
             Follow Us
@@ -145,7 +145,7 @@ const Header = () => {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <nav className="md:hidden mt-4 px-4">
+        <nav className="md:hidden mt-6 px-4">
           <ul className="flex flex-col gap-4">
             <li>
               <Link
@@ -220,6 +220,15 @@ const Header = () => {
                   </li>
                 </ul>
               )}
+            </li>
+            <li className="flex justify-center">
+              <button
+                onClick={handleFollow}
+                className="flex items-center text-blue-600 dark:text-blue-500 hover:text-blue-800 dark:hover:text-blue-400 transition-colors duration-200"
+              >
+                <FaInstagram className="text-xl mr-2" />
+                Follow Us
+              </button>
             </li>
           </ul>
         </nav>
