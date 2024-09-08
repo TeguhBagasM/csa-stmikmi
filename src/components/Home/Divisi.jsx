@@ -50,7 +50,7 @@ const Divisi = () => {
               className="cursor-pointer flex items-center justify-between p-4 bg-blue-500 text-gray-100"
               onClick={() => toggleAccordion(index)}
             >
-              <h3 className="text-xl font-semibold">{division.title}</h3>
+              <h3 className="text-xl text-gray-200 font-semibold">{division.title}</h3>
               <span className="text-2xl">{activeIndex === index ? "-" : "+"}</span>
             </div>
             {activeIndex === index && (

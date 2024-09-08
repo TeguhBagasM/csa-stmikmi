@@ -58,11 +58,11 @@ const Banner = () => {
             isVisible.title ? "animate-slide-bottom" : "opacity-0"
           }`}
         >
-          <h1 className="text-4xl lg:text-[48px] font-semibold leading-none mb-6 bg-gradient-to-r from-indigo-500 via-green-500 to-blue-500 bg-clip-text text-transparent">
+          <h1 className="text-4xl lg:text-[48px] font-semibold leading-none mb-6 bg-gradient-to-r from-blue-500 via-violet-500 to-blue-500 bg-clip-text text-transparent">
             Creative Student Association
           </h1>
 
-          <div className="max-w-[440px] text-3xl font-medium mb-8 text-indigo-500">
+          <div className="max-w-[440px] text-3xl font-medium mb-8 text-blue-500">
             <Type />
           </div>
           <a
