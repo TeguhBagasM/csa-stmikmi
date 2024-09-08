@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaInfoCircle, FaLaptopCode } from "react-icons/fa";
+import { FaInfoCircle, FaInstagram, FaLaptopCode } from "react-icons/fa";
 import { AiOutlineMenu, AiOutlineClose, AiFillHome } from "react-icons/ai";
 import DarkModeSwitch from "../DarkModeSwitch";
 import Logo from "../../assets/images/logo-csa.png";
@@ -32,6 +32,10 @@ const Header = () => {
     }
     localStorage.setItem("darkMode", darkMode);
   }, [darkMode]);
+
+  const handleFollow = () => {
+    window.open("https://instagram.com/csa_stmikmi", "_blank");
+  };
 
   return (
     <header className="py-6 mb-12 border-b bg-white border-gray-300 dark:border-gray-600 dark:bg-gray-950 dark:text-white">
@@ -113,6 +117,14 @@ const Header = () => {
         {/* Right Side Actions */}
         <div className="flex items-center gap-4">
           <DarkModeSwitch enabled={darkMode} setEnabled={setDarkMode} />
+
+          <button
+            onClick={handleFollow}
+            className="hidden md:flex items-center bg-blue-600 text-white py-2 px-3 rounded-md shadow-md hover:bg-blue-700 transition-colors duration-200"
+          >
+            <FaInstagram className="text-xl mr-2" />
+            Follow Us
+          </button>
 
           {/* Mobile Menu Toggle */}
           <div className="md:hidden">
