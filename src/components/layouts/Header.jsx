@@ -120,7 +120,7 @@ const Header = () => {
 
           <button
             onClick={handleFollow}
-            className="hidden md:flex items-center bg-blue-600 text-white py-2 px-3 rounded-xl shadow-md hover:bg-blue-700 transition-colors duration-200"
+            className="hidden md:flex items-center bg-blue-600 text-white py-2 px-3 rounded-lg shadow-md hover:bg-blue-800 transition-colors duration-200"
           >
             <FaInstagram className="text-xl mr-2" />
             Follow Us
