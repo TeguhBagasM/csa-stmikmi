@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaInfoCircle } from "react-icons/fa";
+import { FaInfoCircle, FaLaptopCode } from "react-icons/fa";
 import { AiOutlineMenu, AiOutlineClose, AiFillHome } from "react-icons/ai";
 import DarkModeSwitch from "../DarkModeSwitch";
 import Logo from "../../assets/images/logo-csa.png";
+import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri";
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState(() => {
@@ -59,9 +60,15 @@ const Header = () => {
           <div className="relative">
             <button
               onClick={toggleDropdown}
-              className="md:flex items-center hover:text-blue-600 transition-colors duration-200"
+              className="flex items-center gap-2 hover:text-blue-600 transition-colors duration-200"
             >
+              <FaLaptopCode className="text-xl" />
               Divisi
+              {isDropdownOpen ? (
+                <RiArrowUpSLine className="text-xl" />
+              ) : (
+                <RiArrowDownSLine className="text-xl" />
+              )}
             </button>
             {/* Dropdown Items */}
             {isDropdownOpen && (
@@ -69,7 +76,7 @@ const Header = () => {
                 <li>
                   <Link
                     to="/divisi/game"
-                    className="block px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
+                    className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
                   >
                     Game
                   </Link>
@@ -77,7 +84,7 @@ const Header = () => {
                 <li>
                   <Link
                     to="/divisi/pemrograman"
-                    className="block px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
+                    className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
                   >
                     Pemrograman
                   </Link>
@@ -85,7 +92,7 @@ const Header = () => {
                 <li>
                   <Link
                     to="/divisi/iot"
-                    className="block px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
+                    className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
                   >
                     Internet of Things
                   </Link>
@@ -93,7 +100,7 @@ const Header = () => {
                 <li>
                   <Link
                     to="/divisi/multimedia"
-                    className="block px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
+                    className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
                   >
                     Multimedia
                   </Link>
@@ -153,7 +160,13 @@ const Header = () => {
                 onClick={toggleDropdown}
                 className="flex items-center text-gray-800 dark:text-gray-200 dark:hover:text-blue-500 hover:text-blue-600 transition-colors duration-200"
               >
+                <FaLaptopCode className="text-xl mr-2" />
                 Divisi
+                {isDropdownOpen ? (
+                  <RiArrowUpSLine className="text-xl ml-1" />
+                ) : (
+                  <RiArrowDownSLine className="text-xl ml-1" />
+                )}
               </button>
               {isDropdownOpen && (
                 <ul className="mt-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md shadow-lg">
@@ -161,7 +174,7 @@ const Header = () => {
                     <Link
                       to="/divisi/game"
                       onClick={toggleMenu}
-                      className="block px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
+                      className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
                     >
                       Game
                     </Link>
@@ -170,7 +183,7 @@ const Header = () => {
                     <Link
                       to="/divisi/pemrograman"
                       onClick={toggleMenu}
-                      className="block px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
+                      className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
                     >
                       Pemrograman
                     </Link>
@@ -179,7 +192,7 @@ const Header = () => {
                     <Link
                       to="/divisi/iot"
                       onClick={toggleMenu}
-                      className="block px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
+                      className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
                     >
                       Internet of Things
                     </Link>
@@ -188,7 +201,7 @@ const Header = () => {
                     <Link
                       to="/divisi/multimedia"
                       onClick={toggleMenu}
-                      className="block px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
+                      className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
                     >
                       Multimedia
                     </Link>
