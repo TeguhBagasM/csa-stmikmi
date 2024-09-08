@@ -40,7 +40,9 @@ const Divisi = () => {
 
   return (
     <section className="max-w-7xl mx-auto px-4 py-8">
-      <h2 className="text-4xl font-bold text-center mb-10">Divisi CSA</h2>
+      <h2 className="text-4xl text-gray-900 dark:text-gray-100 font-bold text-center mb-10">
+        Divisi CSA
+      </h2>
       <div className="grid gap-6 sm:grid-cols-1 lg:grid-cols-2">
         {divisions.map((division, index) => (
           <div key={index} className="bg-gray-100 dark:bg-gray-950 rounded-lg overflow-hidden">
