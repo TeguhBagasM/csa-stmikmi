@@ -57,7 +57,7 @@ const Header = () => {
             to="/tentang-kami"
             className="md:flex items-center hover:text-blue-600 transition-colors duration-200"
           >
-            <FaInfoCircle className="mr-2 text-xl" /> About Us
+            <FaInfoCircle className="mr-2 text-xl" /> Visi dan Misi
           </Link>
 
           {/* Dropdown Menu Divisi */}

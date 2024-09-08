@@ -1,12 +1,12 @@
 import React from "react";
 
-import TentangLayanan from "../components/abouts/TentangLayanan";
+import VisiMisi from "../components/abouts/VisiMisi";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 
 const TentangKami = () => {
   return (
     <div className="min-h-[650px]">
-      <TentangLayanan />
+      <VisiMisi />
       <ScrollToTopButton />
     </div>
   );

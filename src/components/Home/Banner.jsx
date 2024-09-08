@@ -2,10 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "../../assets/images/banner.png";
 import Type from "./Type";
 import toast from "react-hot-toast";
-import DaftarModal from "../modal/DaftarModal"; // Import modal
+// import DaftarModal from "../modal/DaftarModal"; // Import modal
 
 const Banner = () => {
-  const [isDaftarModalOpen, setIsDaftarModalOpen] = useState(false);
+  // const [isDaftarModalOpen, setIsDaftarModalOpen] = useState(false);
 
   const [isVisible, setIsVisible] = useState({ title: false, image: false });
   const titleRef = useRef(null);
@@ -75,8 +75,8 @@ const Banner = () => {
             <Type />
           </div>
           <button
-            onClick={handleDaftar()}
-            className="relative px-6 py-2 border-2 rounded-lg bg-white text-gray-950 font-semibold dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-300 animate-border-animate border-transparent shadow-lg shadow-blue-500/50 hover:shadow-blue-700/80 dark:hover:shadow-blue-500/70"
+            onClick={handleDaftar}
+            className="relative px-6 py-2 border-2 rounded-lg bg-white text-gray-950 font-semibold dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-300 animate-border-animate border-transparent shadow-lg shadow-blue-500/50 hover:shadow-blue-700/70 dark:hover:shadow-blue-500/70"
           >
             Daftar Sekarang
           </button>
@@ -90,7 +90,7 @@ const Banner = () => {
           <img src={Image} alt="Banner" className="max-w-full h-auto object-cover lg:w-[80%]" />
         </div>
       </div>
-      <DaftarModal isOpen={isDaftarModalOpen} onClose={() => setIsDaftarModalOpen(false)} />
+      {/* <DaftarModal isOpen={isDaftarModalOpen} onClose={() => setIsDaftarModalOpen(false)} /> */}
     </section>
   );
 };
