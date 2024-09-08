@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "../../assets/images/banner.png";
 import Type from "./Type";
 import toast from "react-hot-toast";
-import { Link } from "react-router-dom";
 
 const Banner = () => {
   const [isVisible, setIsVisible] = useState({ title: false, image: false });
@@ -69,10 +68,10 @@ const Banner = () => {
             Creative Student Association
           </h1>
 
-          <div className="max-w-[440px] text-3xl font-medium mb-8 text-blue-500">
+          <div className="max-w-[440px] text-2xl font-medium mb-8 text-blue-500">
             <Type />
           </div>
-          <Link
+          {/* <Link
             to="#"
             onClick={handleClick}
             className="relative inline-flex items-center justify-start px-5 py-3 overflow-hidden font-bold rounded-full group cursor-pointer"
@@ -83,7 +82,13 @@ const Banner = () => {
               Register Now
             </span>
             <span className="absolute inset-0 border-2 border-blue-600 rounded-full"></span>
-          </Link>
+          </Link> */}
+          <button
+            onClick={handleClick}
+            className="relative px-6 py-2 border-4 rounded-lg bg-white text-gray-950 font-semibold hover:bg-gray-300 dark:hover:bg-gray-900 dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-300 animate-border-animate border-transparent"
+          >
+            Daftar Sekarang
+          </button>
         </div>
         <div
           ref={imageRef}
