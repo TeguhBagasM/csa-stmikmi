@@ -2,11 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "../../assets/images/banner.png";
 import Type from "./Type";
 import toast from "react-hot-toast";
-// import DaftarModal from "../modal/DaftarModal"; // Import modal
 
 const Banner = () => {
-  // const [isDaftarModalOpen, setIsDaftarModalOpen] = useState(false);
-
   const [isVisible, setIsVisible] = useState({ title: false, image: false });
   const titleRef = useRef(null);
   const imageRef = useRef(null);
@@ -54,7 +51,6 @@ const Banner = () => {
   }, []);
 
   const handleDaftar = () => {
-    // event.preventDefault(); // Prevents navigation
     toast.error("Pendaftaran belum dibuka");
   };
 
@@ -90,7 +86,6 @@ const Banner = () => {
           <img src={Image} alt="Banner" className="max-w-full h-auto object-cover lg:w-[80%]" />
         </div>
       </div>
-      {/* <DaftarModal isOpen={isDaftarModalOpen} onClose={() => setIsDaftarModalOpen(false)} /> */}
     </section>
   );
 };
