@@ -31,7 +31,7 @@ const divisions = [
   },
 ];
 
-const Divisi = () => {
+const DivisiCsa = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -74,4 +74,4 @@ const Divisi = () => {
   );
 };
 
-export default Divisi;
+export default DivisiCsa;
