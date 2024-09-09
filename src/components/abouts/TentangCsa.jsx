@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-const VisiMisi = () => {
+const SejarahCsa = () => {
   const [isVisible, setIsVisible] = useState({
     title: false,
     cards: false,
@@ -59,7 +59,7 @@ const VisiMisi = () => {
               isVisible.title ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            Visi dan Misi
+            Tentang CSA
           </h2>
         </div>
         <div
@@ -69,23 +69,23 @@ const VisiMisi = () => {
           }`}
         >
           <div className="bg-white dark:bg-gray-900 shadow-lg rounded-xl p-6 text-center hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
-            <h3 className="text-2xl font-semibold text-gray-700 dark:text-gray-200">Visi</h3>
+            <h3 className="text-2xl font-semibold text-gray-700 dark:text-gray-200">Apa itu CSA?</h3>
             <p className="mt-4 text-gray-600 dark:text-gray-400">
-              Menjadi penggerak utama dalam menginspirasi dan membangun komunitas mahasiswa kreatif
-              yang berdedikasi untuk mendorong inovasi, kolaborasi lintas disiplin, dan pengembangan
-              kreatif yang berkelanjutan. Menuju go internasional.
+              CSA (Creative Student Association) yaitu, suatu organisasi berbasis IT yang bertempat di
+              STMIK Mardira Indonesia. Organisasi ini menyangkut semua hal tentang IT seperti
+              Pemrograman, Multimedia, IOT dan Game.
             </p>
           </div>
-
           <div className="bg-white dark:bg-gray-900 shadow-lg rounded-xl p-6 text-center hover:shadow-xl transition-transform duration-300 hover:-translate-y-2">
-            <h3 className="text-2xl font-semibold text-gray-700 dark:text-gray-200">Misi</h3>
-            <ol className="mt-4 text-gray-600 dark:text-gray-400 text-left list-decimal list-inside">
-              <li>Mengembangkan wadah kolaborasi untuk pertukaran ide antar mahasiswa kreatif.</li>
-              <li>Memfasilitasi pengembangan kreativitas dan acara inspiratif.</li>
-              <li>Mendorong inovasi berkelanjutan dengan dampak positif bagi masyarakat.</li>
-              <li>Memperluas jaringan dan kemitraan dengan industri kreatif serta lembaga terkait.</li>
-              <li>Menggalang kesadaran sosial melalui kreativitas untuk isu-isu sosial dan budaya.</li>
-            </ol>
+            <h3 className="text-2xl font-semibold text-gray-700 dark:text-gray-200">Sejarah CSA</h3>
+            <p className="mt-4 text-gray-600 dark:text-gray-400">
+              Berawal dari non-aktifnya Unit Kegiatan Mahasiswa yang berfokus pada Pemrograman yaitu
+              HMJ IF. <br /> Maka di akhir tahun 2017, sekumpulan Mahasiswa kreatif mempunyai ide untuk
+              mengaktifkan organisasi yang berfokus pada Pemrograman dan Informatika. Hingga saat ini
+              organisasi tersebut kita kenal sebagai CSA (Creative Student Association), yang didirikan
+              oleh mahasiswa-mahasiswi kreatif yang dikenal sebagai para Founder CSA. Organisasi ini
+              pun mendapat dorongan dari Pimpinan STMIK Mardira Indonesia untuk didirikan.
+            </p>
           </div>
         </div>
       </div>
@@ -93,4 +93,4 @@ const VisiMisi = () => {
   );
 };
 
-export default VisiMisi;
+export default SejarahCsa;
