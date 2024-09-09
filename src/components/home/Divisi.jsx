@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import programmingImg from "../assets/images/divisi/pemrograman.png"; // Ganti dengan path gambar
-import iotImg from "../assets/images/divisi/iot.png";
-import multimediaImg from "../assets/images/divisi/mulmed.png";
-import gameDevImg from "../assets/images/divisi/game.jpg";
+import programmingImg from "../../assets/images/divisi/pemrograman.png"; // Ganti dengan path gambar
+import iotImg from "../../assets/images/divisi/iot.png";
+import multimediaImg from "../../assets/images/divisi/mulmed.png";
+import gameDevImg from "../../assets/images/divisi/game.jpg";
 
 const divisions = [
   {

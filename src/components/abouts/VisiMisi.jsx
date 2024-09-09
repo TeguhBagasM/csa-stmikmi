@@ -55,8 +55,8 @@ const VisiMisi = () => {
         <div className="text-center">
           <h2
             ref={titleRef}
-            className={`text-4xl font-bold text-gray-800 dark:text-gray-100 transition-opacity duration-1000 ${
-              isVisible.title ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+            className={`text-4xl font-bold text-gray-800 dark:text-gray-100 transition-transform duration-1000 ${
+              isVisible.title ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
           >
             Visi dan Misi
@@ -64,7 +64,7 @@ const VisiMisi = () => {
         </div>
         <div
           ref={cardsRef}
-          className={`mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 transition-opacity duration-1000 ${
+          className={`mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 transition-transform duration-1000 ${
             isVisible.cards ? "opacity-100 scale-100" : "opacity-0 scale-95"
           }`}
         >

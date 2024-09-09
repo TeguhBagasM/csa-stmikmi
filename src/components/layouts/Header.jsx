@@ -7,6 +7,7 @@ import Logo from "../../assets/images/logo-csa.png";
 import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri";
 
 const Header = () => {
+  // Inisialisasi darkMode dari localStorage atau default ke light mode
   const [darkMode, setDarkMode] = useState(() => {
     const storedMode = localStorage.getItem("darkMode");
     return storedMode === "true" ? true : false;
@@ -23,7 +24,7 @@ const Header = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
 
-  // Update dark mode class and localStorage whenever darkMode state changes
+  // Update dark mode class dan simpan status ke localStorage
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
@@ -38,7 +39,7 @@ const Header = () => {
   };
 
   return (
-    <header className="py-6 mb-12 border-b bg-white border-gray-300 dark:border-gray-600 dark:bg-black dark:text-white">
+    <header className="py-6 mb-12 border-b bg-white border-gray-300 dark:border-gray-600 dark:bg-gray-900 z-40 dark:text-white">
       <div className="container mx-auto flex justify-between items-center px-4">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
@@ -79,14 +80,6 @@ const Header = () => {
               <ul className="absolute top-full left-0 mt-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md shadow-lg">
                 <li>
                   <Link
-                    to="/divisi-game"
-                    className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
-                  >
-                    Game
-                  </Link>
-                </li>
-                <li>
-                  <Link
                     to="/divisi-pemrograman"
                     className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
                   >
@@ -95,18 +88,26 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    to="/divisi-iot"
-                    className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
-                  >
-                    Internet of Things
-                  </Link>
-                </li>
-                <li>
-                  <Link
                     to="/divisi-multimedia"
                     className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
                   >
                     Multimedia
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/divisi-game"
+                    className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
+                  >
+                    Game
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/divisi-iot"
+                    className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
+                  >
+                    IoT
                   </Link>
                 </li>
               </ul>
@@ -184,29 +185,11 @@ const Header = () => {
                 <ul className="mt-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md shadow-lg">
                   <li>
                     <Link
-                      to="/divisi-game"
-                      onClick={toggleMenu}
-                      className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
-                    >
-                      Game
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
                       to="/divisi-pemrograman"
                       onClick={toggleMenu}
                       className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
                     >
                       Pemrograman
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/divisi-iot"
-                      onClick={toggleMenu}
-                      className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
-                    >
-                      Internet of Things
                     </Link>
                   </li>
                   <li>
@@ -218,17 +201,26 @@ const Header = () => {
                       Multimedia
                     </Link>
                   </li>
+                  <li>
+                    <Link
+                      to="/divisi-iot"
+                      onClick={toggleMenu}
+                      className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
+                    >
+                      IoT
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/divisi-game"
+                      onClick={toggleMenu}
+                      className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
+                    >
+                      Game
+                    </Link>
+                  </li>
                 </ul>
               )}
-            </li>
-            <li className="flex justify-center">
-              <button
-                onClick={handleFollow}
-                className="flex items-center text-blue-600 dark:text-blue-500 hover:text-blue-800 dark:hover:text-blue-400 transition-colors duration-200"
-              >
-                <FaInstagram className="text-xl mr-2" />
-                Follow Us
-              </button>
             </li>
           </ul>
         </nav>

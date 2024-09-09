@@ -1,10 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
-import Image from "../assets/images/banner.png";
+import Image from "../../assets/images/banner.png";
 import Type from "./Type";
 import toast from "react-hot-toast";
 
 const Banner = () => {
   const [isVisible, setIsVisible] = useState({ title: false, image: false });
+  const [isDisabled, setIsDisabled] = useState(false);
   const titleRef = useRef(null);
   const imageRef = useRef(null);
 
@@ -51,11 +52,15 @@ const Banner = () => {
   }, []);
 
   const handleDaftar = () => {
+    setIsDisabled(true);
+    setTimeout(() => {
+      setIsDisabled(false);
+    }, 5000);
     toast.error("Pendaftaran belum dibuka");
   };
 
   return (
-    <section className="h-full max-h-[640px] mb-8 xl:mb-24 dark:bg-bg-gray-950">
+    <section className="h-full max-h-[640px] mb-8 xl:mb-24 dark:bg-gray-950">
       <div className="flex flex-col lg:flex-row">
         <div
           ref={titleRef}
@@ -72,7 +77,10 @@ const Banner = () => {
           </div>
           <button
             onClick={handleDaftar}
-            className="relative px-6 py-2 border-2 rounded-lg bg-white text-gray-950 font-semibold dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-300 animate-border-animate border-transparent shadow-lg shadow-blue-500/50 hover:shadow-blue-700/70 dark:hover:shadow-blue-500/70"
+            disabled={isDisabled}
+            className={`relative px-6 py-2 border-2 rounded-lg bg-white text-gray-950 font-semibold dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-300 animate-border-animate border-transparent shadow-lg shadow-blue-500/50 hover:shadow-blue-700/70 dark:hover:shadow-blue-500/70 ${
+              isDisabled ? "opacity-50 cursor-not-allowed" : ""
+            }`}
           >
             Daftar Sekarang
           </button>
