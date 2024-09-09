@@ -1,16 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/layouts/Header";
 import Footer from "./components/layouts/Footer";
 import Home from "./pages/Home";
 import TentangKami from "./pages/TentangKami";
 import { ToasterProvider } from "./providers/toast-provider";
-import DivisiPemrograman from "./pages/divisi/Pemrograman";
-import DivisiGame from "./pages/divisi/Game";
-import DivisiIot from "./pages/divisi/Iot";
-import DivisiMultimedia from "./pages/divisi/Multimedia";
+import DivisiPemrograman from "./components/divisi/Pemrograman";
+import DivisiGame from "./components/divisi/Game";
+import DivisiIot from "./components/divisi/Iot";
+import DivisiMultimedia from "./components/divisi/Multimedia";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const App = () => {
+  useEffect(() => {
+    AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: "ease-in-sine",
+      delay: 100,
+    });
+    AOS.refresh();
+  }, []);
   return (
     <div className="max-w-[1440px] mx-auto bg-gray-100 dark:bg-gray-950">
       <Header />

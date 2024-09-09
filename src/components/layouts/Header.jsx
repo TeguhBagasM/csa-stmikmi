@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaInfoCircle, FaInstagram, FaLaptopCode } from "react-icons/fa";
+import { FaInfoCircle, FaInstagram } from "react-icons/fa";
 import { AiOutlineMenu, AiOutlineClose, AiFillHome } from "react-icons/ai";
 import DarkModeSwitch from "../DarkModeSwitch";
 import Logo from "../../assets/images/logo-csa.png";
-import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri";
 
 const Header = () => {
   // Inisialisasi darkMode dari localStorage atau default ke light mode
@@ -14,16 +13,10 @@ const Header = () => {
   });
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-
-  const toggleDropdown = () => {
-    setIsDropdownOpen(!isDropdownOpen);
-  };
-
   // Update dark mode class dan simpan status ke localStorage
   useEffect(() => {
     if (darkMode) {
@@ -39,7 +32,7 @@ const Header = () => {
   };
 
   return (
-    <header className="py-6 mb-12 border-b bg-white border-gray-300 dark:border-gray-600 dark:bg-gray-900 z-40 dark:text-white">
+    <header className="py-6 mb-12 border-b bg-white border-gray-300 dark:border-gray-600 dark:bg-gray-950 z-40 dark:text-white">
       <div className="container mx-auto flex justify-between items-center px-4">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
@@ -60,59 +53,6 @@ const Header = () => {
           >
             <FaInfoCircle className="mr-2 text-xl" /> About CSA
           </Link>
-
-          {/* Dropdown Menu Divisi */}
-          <div className="relative">
-            <button
-              onClick={toggleDropdown}
-              className="flex items-center gap-2 hover:text-blue-600 transition-colors duration-200"
-            >
-              <FaLaptopCode className="text-xl" />
-              Divisi
-              {isDropdownOpen ? (
-                <RiArrowUpSLine className="text-xl" />
-              ) : (
-                <RiArrowDownSLine className="text-xl" />
-              )}
-            </button>
-            {/* Dropdown Items */}
-            {isDropdownOpen && (
-              <ul className="absolute top-full left-0 mt-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md shadow-lg">
-                <li>
-                  <Link
-                    to="/divisi-pemrograman"
-                    className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
-                  >
-                    Pemrograman
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/divisi-multimedia"
-                    className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
-                  >
-                    Multimedia
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/divisi-game"
-                    className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
-                  >
-                    Game
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/divisi-iot"
-                    className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
-                  >
-                    IoT
-                  </Link>
-                </li>
-              </ul>
-            )}
-          </div>
         </nav>
 
         {/* Right Side Actions */}
@@ -165,62 +105,6 @@ const Header = () => {
               >
                 <FaInfoCircle className="mr-2 text-xl" /> About Us
               </Link>
-            </li>
-
-            {/* Divisi for Mobile Menu */}
-            <li>
-              <button
-                onClick={toggleDropdown}
-                className="flex items-center text-gray-800 dark:text-gray-200 dark:hover:text-blue-500 hover:text-blue-600 transition-colors duration-200"
-              >
-                <FaLaptopCode className="text-xl mr-2" />
-                Divisi
-                {isDropdownOpen ? (
-                  <RiArrowUpSLine className="text-xl ml-1" />
-                ) : (
-                  <RiArrowDownSLine className="text-xl ml-1" />
-                )}
-              </button>
-              {isDropdownOpen && (
-                <ul className="mt-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md shadow-lg">
-                  <li>
-                    <Link
-                      to="/divisi-pemrograman"
-                      onClick={toggleMenu}
-                      className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
-                    >
-                      Pemrograman
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/divisi-multimedia"
-                      onClick={toggleMenu}
-                      className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
-                    >
-                      Multimedia
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/divisi-iot"
-                      onClick={toggleMenu}
-                      className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
-                    >
-                      IoT
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="/divisi-game"
-                      onClick={toggleMenu}
-                      className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
-                    >
-                      Game
-                    </Link>
-                  </li>
-                </ul>
-              )}
             </li>
           </ul>
         </nav>
