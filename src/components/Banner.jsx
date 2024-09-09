@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import Image from "../../assets/images/banner.png";
-import Type from "./Type";
+import Image from "../assets/images/banner.png";
+import Type from "./home/Type";
 import toast from "react-hot-toast";
 
 const Banner = () => {
