@@ -1,7 +1,7 @@
 import React from "react";
 import ScrollToTopButton from "../components/ScrollToTopButton";
-import Banner from "../components/home/Banner";
 import DivisiCsa from "../components/home/Divisi";
+import Banner from "../components/Banner";
 
 const Home = () => {
   return (
