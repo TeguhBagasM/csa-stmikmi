@@ -5,6 +5,10 @@ import Footer from "./components/layouts/Footer";
 import Home from "./pages/Home";
 import TentangKami from "./pages/TentangKami";
 import { ToasterProvider } from "./providers/toast-provider";
+import DivisiPemrograman from "./pages/divisi/Pemrograman";
+import DivisiGame from "./pages/divisi/Game";
+import DivisiIot from "./pages/divisi/Iot";
+import DivisiMultimedia from "./pages/divisi/Multimedia";
 
 const App = () => {
   return (
@@ -14,6 +18,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/tentang-kami" element={<TentangKami />} />
+        <Route path="/divisi-pemrograman" element={<DivisiPemrograman />} />
+        <Route path="/divisi-game" element={<DivisiGame />} />
+        <Route path="/divisi-iot" element={<DivisiIot />} />
+        <Route path="/divisi-multimedia" element={<DivisiMultimedia />} />
       </Routes>
       <Footer />
     </div>

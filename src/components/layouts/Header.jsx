@@ -38,7 +38,7 @@ const Header = () => {
   };
 
   return (
-    <header className="py-6 mb-12 border-b bg-white border-gray-300 dark:border-gray-600 dark:bg-gray-950 dark:text-white">
+    <header className="py-6 mb-12 border-b bg-white border-gray-300 dark:border-gray-600 dark:bg-black dark:text-white">
       <div className="container mx-auto flex justify-between items-center px-4">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
@@ -79,7 +79,7 @@ const Header = () => {
               <ul className="absolute top-full left-0 mt-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md shadow-lg">
                 <li>
                   <Link
-                    to="/divisi/game"
+                    to="/divisi-game"
                     className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
                   >
                     Game
@@ -87,7 +87,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    to="/divisi/pemrograman"
+                    to="/divisi-pemrograman"
                     className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
                   >
                     Pemrograman
@@ -95,7 +95,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    to="/divisi/iot"
+                    to="/divisi-iot"
                     className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
                   >
                     Internet of Things
@@ -103,7 +103,7 @@ const Header = () => {
                 </li>
                 <li>
                   <Link
-                    to="/divisi/multimedia"
+                    to="/divisi-multimedia"
                     className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
                   >
                     Multimedia
@@ -184,7 +184,7 @@ const Header = () => {
                 <ul className="mt-2 bg-white dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-md shadow-lg">
                   <li>
                     <Link
-                      to="/divisi/game"
+                      to="/divisi-game"
                       onClick={toggleMenu}
                       className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
                     >
@@ -193,7 +193,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      to="/divisi/pemrograman"
+                      to="/divisi-pemrograman"
                       onClick={toggleMenu}
                       className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
                     >
@@ -202,7 +202,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      to="/divisi/iot"
+                      to="/divisi-iot"
                       onClick={toggleMenu}
                       className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
                     >
@@ -211,7 +211,7 @@ const Header = () => {
                   </li>
                   <li>
                     <Link
-                      to="/divisi/multimedia"
+                      to="/divisi-multimedia"
                       onClick={toggleMenu}
                       className="flex items-center px-4 py-2 hover:bg-blue-500 dark:hover:bg-gray-700 hover:text-white"
                     >
