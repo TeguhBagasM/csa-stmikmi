@@ -15,12 +15,14 @@ import "swiper/css"; // Gaya dasar Swiper
 import "swiper/css/navigation"; // Gaya untuk navigasi
 import "swiper/css/pagination"; // Gaya untuk pagination
 import DivisiCsa from "../components/home/DivisiCsa";
+import Kegiatan from "../components/gallery/Kegiatan";
 
 const Home = () => {
   return (
     <div className="min-h-[1200px]">
       <Banner />
       <HomeCsa />
+      <Kegiatan />
       <TentangCsa />
       <VisiMisi />
       <DivisiCsa />

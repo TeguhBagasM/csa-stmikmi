@@ -44,7 +44,13 @@ const Banner = () => {
         </div>
 
         <div data-aos="zoom-in" className="flex-1 lg:flex justify-center items-center mt-8 lg:mt-0">
-          <img src={Image} alt="Banner" className="max-w-full h-auto object-cover lg:w-[80%]" />
+          <div className="relative w-full max-w-[80%] md:max-w-[60%] mx-auto">
+            <img
+              src={Image}
+              alt="Banner"
+              className="w-full h-auto object-cover" // Make sure the image covers the area properly
+            />
+          </div>
         </div>
       </div>
     </section>
