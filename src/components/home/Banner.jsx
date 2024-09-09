@@ -23,7 +23,7 @@ const Banner = () => {
         >
           <h1
             data-aos="zoom-in"
-            className="text-4xl lg:text-[48px] font-semibold leading-none mb-6 bg-gradient-to-r from-blue-500 via-cyan-600 to-blue-500 bg-clip-text text-transparent"
+            className="text-4xl lg:text-[48px] font-semibold leading-none mb-6 bg-gradient-to-r from-blue-600 to-cyan-500 dark:to-cyan-400 bg-clip-text text-transparent"
           >
             Creative Student Association
           </h1>
@@ -32,6 +32,7 @@ const Banner = () => {
             <Type />
           </div>
           <button
+            data-aos="zoom-in"
             onClick={handleDaftar}
             disabled={isDisabled}
             className={`relative px-6 py-2 border-2 rounded-lg bg-white text-gray-950 font-semibold dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-300 animate-border-animate border-transparent shadow-lg shadow-blue-500/50 hover:shadow-blue-700/70 dark:hover:shadow-blue-500/70 ${

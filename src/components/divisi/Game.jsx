@@ -11,7 +11,7 @@ const DivisiGame = () => {
         >
           <h1
             data-aos="zoom-in"
-            className="text-4xl lg:text-[48px] font-semibold leading-none mb-6 bg-gradient-to-r from-blue-500 via-violet-500 to-blue-500 bg-clip-text text-transparent"
+            className="text-4xl lg:text-[48px] font-semibold leading-none mb-6 bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent"
           >
             Game
           </h1>

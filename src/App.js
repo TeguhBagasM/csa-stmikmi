@@ -23,7 +23,7 @@ const App = () => {
     AOS.refresh();
   }, []);
   return (
-    <div className="max-w-[1440px] mx-auto bg-gray-100 dark:bg-gray-950">
+    <div className="max-w-full mx-auto bg-gray-100 dark:bg-gray-950 overflow-x-hidden">
       <Header />
       <ToasterProvider />
       <Routes>
