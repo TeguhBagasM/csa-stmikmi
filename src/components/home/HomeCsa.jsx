@@ -2,8 +2,11 @@ import React from "react";
 
 const HomeCsa = () => {
   return (
-    <section className="bg-gradient-to-r from-cyan-500 to-blue-600 dark:from-cyan-600 dark:to-blue-900 text-gray-100 py-12">
-      <div data-aos="zoom-in" className="max-w-7xl mx-auto px-4">
+    <section
+      data-aos="zoom-in"
+      className="bg-gradient-to-r from-cyan-500 to-blue-600 dark:from-cyan-600 dark:to-blue-900 text-gray-100 py-12"
+    >
+      <div data-aos="fade-up" className="max-w-7xl mx-auto px-4">
         <h2 data-aos="slide-bottom" className="text-4xl font-bold text-center">
           Mengapa CSA?
         </h2>
