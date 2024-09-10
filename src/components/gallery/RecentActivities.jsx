@@ -126,7 +126,9 @@ function RecentActivities() {
             <div
               key={slideIndex}
               onClick={() => goToSlide(slideIndex)}
-              className="text-2xl cursor-pointer text-gray-400 dark:text-gray-500"
+              className={`text-2xl  cursor-pointer transition-all duration-300 ${
+                currentIndex === slideIndex ? "text-blue-600" : "text-gray-400"
+              } hover:text-blue-400`}
             >
               <RxDotFilled />
             </div>
