@@ -16,6 +16,7 @@ import "swiper/css/navigation"; // Gaya untuk navigasi
 import "swiper/css/pagination"; // Gaya untuk pagination
 import DivisiCsa from "../components/home/DivisiCsa";
 import Kegiatan from "../components/gallery/Kegiatan";
+import RecentActivities from "../components/gallery/RecentActivities";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <Banner />
       <HomeCsa />
       <Kegiatan />
+      <RecentActivities />
       <TentangCsa />
       <VisiMisi />
       <DivisiCsa />
