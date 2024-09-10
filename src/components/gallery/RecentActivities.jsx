@@ -67,6 +67,8 @@ function RecentActivities() {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
@@ -84,9 +86,33 @@ function RecentActivities() {
     setCurrentIndex(slideIndex);
   };
 
+  // Event handler untuk swipe di perangkat mobile
+  const handleTouchStart = (e) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe) nextSlide();
+    if (isRightSwipe) prevSlide();
+  };
+
   return (
     <div className="max-w-[1200px] mx-auto py-16 px-4 relative">
-      <div className="relative w-full h-[400px]">
+      <div
+        className="relative w-full h-[400px]"
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
+      >
         <div className="absolute inset-0 flex items-center justify-between px-4">
           <div
             className="hidden lg:block text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer"
@@ -121,12 +147,13 @@ function RecentActivities() {
             ))}
           </div>
         </div>
-        <div className="flex top-4 justify-center py-2">
+        {/* Pagination (Dots) lebih dekat dengan gambar */}
+        <div className="flex justify-center">
           {slides.map((_, slideIndex) => (
             <div
               key={slideIndex}
               onClick={() => goToSlide(slideIndex)}
-              className={`text-2xl  cursor-pointer transition-all duration-300 ${
+              className={`text-2xl cursor-pointer transition-all duration-300 ${
                 currentIndex === slideIndex ? "text-blue-600" : "text-gray-400"
               } hover:text-blue-400`}
             >

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import slide_image_1 from "./../../assets/images/kegiatan/kegiatan_1.jpg";
@@ -37,6 +37,15 @@ function Kegiatan() {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [touchStart, setTouchStart] = useState(null);
+  const [touchEnd, setTouchEnd] = useState(null);
+
+  // Gunakan useCallback untuk membuat nextSlide tetap stabil
+  const nextSlide = useCallback(() => {
+    const isLastSlide = currentIndex === slides.length - 1;
+    const newIndex = isLastSlide ? 0 : currentIndex + 1;
+    setCurrentIndex(newIndex);
+  }, [currentIndex, slides.length]);
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
@@ -44,18 +53,45 @@ function Kegiatan() {
     setCurrentIndex(newIndex);
   };
 
-  const nextSlide = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  };
-
   const goToSlide = (slideIndex) => {
     setCurrentIndex(slideIndex);
   };
 
+  // Auto slide setiap 3 detik
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 4000); // Slide berubah setiap 3 detik
+
+    return () => clearInterval(interval); // Hentikan interval saat component unmount
+  }, [nextSlide]);
+
+  // Event handler untuk swipe di perangkat mobile
+  const handleTouchStart = (e) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe) nextSlide();
+    if (isRightSwipe) prevSlide();
+  };
+
   return (
-    <div className="max-w-[1200px] h-[650px] w-full m-auto py-16 px-4 relative group">
+    <div
+      className="max-w-[1200px] h-[650px] w-full m-auto py-16 px-4 relative group"
+      onTouchStart={handleTouchStart}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleTouchEnd}
+    >
       <div className="relative w-full h-full">
         <div
           style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
@@ -80,7 +116,7 @@ function Kegiatan() {
           <div
             key={slideIndex}
             onClick={() => goToSlide(slideIndex)}
-            className={`text-2xl  cursor-pointer transition-all duration-300 ${
+            className={`text-2xl cursor-pointer transition-all duration-300 ${
               currentIndex === slideIndex ? "text-blue-600" : "text-gray-400"
             } hover:text-blue-400`}
           >
