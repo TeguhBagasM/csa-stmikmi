@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import slide_image_1 from "./../../assets/images/kegiatan/kegiatan_1.jpg";
-import slide_image_2 from "./../../assets/images/kegiatan/kegiatan_2.jpg";
-import slide_image_3 from "./../../assets/images/kegiatan/kegiatan_3.jpg";
-import slide_image_4 from "./../../assets/images/kegiatan/kegiatan_8.jpg";
+import slide_image_2 from "./../../assets/images/kegiatan/kegiatan_3.jpg";
+import slide_image_3 from "./../../assets/images/kegiatan/kegiatan_6.jpg";
+import slide_image_4 from "./../../assets/images/kegiatan/kegiatan_9.jpg";
 import slide_image_5 from "./../../assets/images/kegiatan/kegiatan_10.jpg";
 
 function Kegiatan() {
