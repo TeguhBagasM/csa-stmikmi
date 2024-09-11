@@ -1,5 +1,5 @@
 import React from "react";
-import ScrollToTopButton from "../components/ScrollToTopButton";
+import ScrollToTopButton from "../components/layouts/ScrollToTopButton";
 // import DivisiCsa from "../components/home/Divisi";
 import Banner from "../components/home/Banner";
 import HomeCsa from "../components/home/HomeCsa";

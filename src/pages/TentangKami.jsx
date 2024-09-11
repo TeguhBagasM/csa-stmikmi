@@ -1,7 +1,7 @@
 import React from "react";
 
 import VisiMisi from "../components/abouts/VisiMisi";
-import ScrollToTopButton from "../components/ScrollToTopButton";
+import ScrollToTopButton from "../components/layouts/ScrollToTopButton";
 import TentangCsa from "../components/abouts/TentangCsa";
 
 const TentangKami = () => {

@@ -1,5 +1,5 @@
-import LightButton from "../assets/website/light-mode-button.png";
-import DarkButton from "../assets/website/dark-mode-button.png";
+import LightButton from "../../assets/website/light-mode-button.png";
+import DarkButton from "../../assets/website/dark-mode-button.png";
 import { useEffect } from "react";
 
 function DarkModeSwitch({ enabled, setEnabled }) {

@@ -147,7 +147,6 @@ function RecentActivities() {
             ))}
           </div>
         </div>
-        {/* Pagination (Dots) lebih dekat dengan gambar */}
         <div className="flex justify-center">
           {slides.map((_, slideIndex) => (
             <div

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaInfoCircle, FaInstagram } from "react-icons/fa";
 import { AiOutlineMenu, AiOutlineClose, AiFillHome } from "react-icons/ai";
-import DarkModeSwitch from "../DarkModeSwitch";
+import DarkModeSwitch from "./DarkModeSwitch";
 import Logo from "../../assets/images/logo-csa.png";
 
 const Header = () => {
