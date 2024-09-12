@@ -37,3 +37,18 @@
   background-color: #007aff; /* Highlight active bullet */
   opacity: 1; /* Full opacity for active bullet */
 }
+
+.link-hover::after {
+  content: "";
+  position: absolute;
+  bottom: -4px; /* Jarak border dari teks */
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #2563eb; /* Warna biru */
+  transition: width 0.3s ease-in-out;
+}
+
+.link-hover:hover::after {
+  width: 100%;
+}

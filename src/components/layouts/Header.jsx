@@ -6,7 +6,6 @@ import DarkModeSwitch from "./DarkModeSwitch";
 import Logo from "../../assets/images/logo-csa.png";
 
 const Header = () => {
-  // Inisialisasi darkMode dari localStorage atau default ke light mode
   const [darkMode, setDarkMode] = useState(() => {
     const storedMode = localStorage.getItem("darkMode");
     return storedMode === "true" ? true : false;
@@ -17,7 +16,7 @@ const Header = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  // Update dark mode class dan simpan status ke localStorage
+
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
@@ -34,7 +33,6 @@ const Header = () => {
   return (
     <header className="py-6 mb-12 border-b bg-white border-gray-300 dark:border-gray-600 dark:bg-gray-950 z-40 dark:text-white">
       <div className="container mx-auto flex justify-between items-center px-4">
-        {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
           <img src={Logo} alt="Logo" className="w-40 h-auto mt-1" />
         </Link>
@@ -43,13 +41,13 @@ const Header = () => {
         <nav className="hidden md:flex gap-8 items-center">
           <Link
             to="/"
-            className=" md:flex items-center hover:text-blue-600 transition-colors duration-200"
+            className="relative md:flex items-center hover:text-blue-600 transition-colors duration-200 link-hover"
           >
             <AiFillHome className="mr-2 text-xl" /> Home
           </Link>
           <Link
             to="/tentang-kami"
-            className="md:flex items-center hover:text-blue-600 transition-colors duration-200"
+            className="relative md:flex items-center hover:text-blue-600 transition-colors duration-200 link-hover"
           >
             <FaInfoCircle className="mr-2 text-xl" /> About CSA
           </Link>
