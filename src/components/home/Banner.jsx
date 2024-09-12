@@ -15,7 +15,7 @@ const Banner = () => {
   };
 
   return (
-    <section className="h-full max-h-[640px] mb-8 xl:mb-24 dark:bg-gray-950">
+    <section className="h-full max-h-[760px] mb-8 xl:mb-24 dark:bg-gray-950">
       <div className="flex flex-col lg:flex-row">
         <div
           data-aos="slide-bottom"
@@ -45,11 +45,7 @@ const Banner = () => {
 
         <div data-aos="zoom-in" className="flex-1 lg:flex justify-center items-center mt-8 lg:mt-0">
           <div className="relative w-full max-w-[80%] md:max-w-[60%] mx-auto">
-            <img
-              src={Image}
-              alt="Banner"
-              className="w-full h-auto object-cover" // Make sure the image covers the area properly
-            />
+            <img src={Image} alt="Banner" className="w-full h-auto object-cover" />
           </div>
         </div>
       </div>
