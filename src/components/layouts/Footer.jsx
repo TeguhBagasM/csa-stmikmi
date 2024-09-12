@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaFacebookF, FaPhone, FaEnvelope, FaHeart } from "react-icons/fa";
+import { FaInstagram, FaFacebookF, FaEnvelope, FaHeart, FaTiktok } from "react-icons/fa";
 import logo from "../../assets/images/logo-csa.png";
 
 const Footer = () => {
@@ -22,21 +22,27 @@ const Footer = () => {
                 size={20}
               />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-              <FaFacebookF
+            <a
+              href="https://tiktok.com/@we_csa01?_t=8peEbgVBEof&_r=1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaTiktok
                 className="dark:text-gray-300 text-gray-600 dark:hover:text-gray-100 hover:text-gray-700"
                 size={20}
               />
             </a>
             <a
-              href="tel:+62000000000"
+              href="https://facebook.com/profile.php?id=100078881016780"
+              target="_blank"
+              rel="noopener noreferrer"
               className="dark:text-gray-300 text-gray-600 dark:hover:text-gray-100 hover:text-gray-700"
             >
-              <FaPhone size={20} />
+              <FaFacebookF size={20} />
             </a>
             <a
-              href="mailto:info@example.com"
-              className="dark:text-gray-300 text-gray-600 dark:hover:text-gray-100 hover:text-gray-700"
+              href="mailto:csaworks2017@gmail.com"
+              className="dark:text-gray-300 text-gray-600 dark:hover:text-gray-100 hover:text-gray-800"
             >
               <FaEnvelope size={20} />
             </a>
@@ -54,7 +60,7 @@ const Footer = () => {
             />
             <button
               type="submit"
-              className="bg-blue-600 text-white py-3 px-6 rounded-md hover:bg-blue-700 w-full md:w-auto"
+              className="bg-blue-600 dark:bg-blue-800 dark:hover:bg-blue-700 text-white py-3 px-6 rounded-md hover:bg-blue-700 w-full md:w-auto"
             >
               Subscribe
             </button>

@@ -105,6 +105,15 @@ const Header = () => {
               </Link>
             </li>
           </ul>
+          <div className="mt-4 flex justify-center">
+            <button
+              onClick={handleFollow}
+              className="flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-200"
+            >
+              <FaInstagram className="text-xl mr-2" />
+              Follow Us
+            </button>
+          </div>
         </nav>
       )}
     </header>
