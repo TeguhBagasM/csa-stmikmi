@@ -4,14 +4,14 @@ import logo from "../../assets/images/logo-csa.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-gray-100 py-8 mt-4">
+    <footer className="bg-gray-200 text-gray-900 dark:bg-gray-900 dark:text-gray-100 py-10">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Bagian Kiri */}
         <div className="flex flex-col items-center md:items-start">
           <div className="flex flex-col md:flex-row items-center mb-4">
             <img src={logo} alt="Logo" className="h-12 w-auto mb-4 md:mb-0 md:mr-3" />
             <div className="text-center md:text-left">
-              <h2 className="font-semibold text-xl">Creative Student Association</h2>
+              <h2 className="font-semibold text-xl">Creative Student Associaton</h2>
               <p className="text-sm mt-1">STMIK Mardira Indonesia</p>
             </div>
           </div>

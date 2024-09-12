@@ -3,7 +3,7 @@ import Image from "../../assets/images/divisi/game.svg";
 
 const DivisiGame = () => {
   return (
-    <section className="relative min-h-screen mb-12 dark:bg-gray-950">
+    <section className="h-full max-h-[640px] mb-8 xl:mb-24 dark:bg-gray-950">
       <div className="flex flex-col lg:flex-row">
         <div
           data-aos="slide-bottom"
