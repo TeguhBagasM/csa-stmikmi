@@ -3,7 +3,7 @@ import { FaLightbulb, FaUsers, FaProjectDiagram, FaGlobe } from "react-icons/fa"
 
 const Benefit = () => {
   return (
-    <section className="bg-white dark:bg-gray-950 py-12">
+    <section className="bg-gray-100 dark:bg-gray-950 py-12">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <h2 data-aos="zoom-in" className="text-4xl font-bold mb-8 text-gray-800 dark:text-gray-200">
           Benefit di CSA
