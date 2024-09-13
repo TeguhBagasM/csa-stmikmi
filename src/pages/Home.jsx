@@ -17,12 +17,14 @@ import "swiper/css/pagination"; // Gaya untuk pagination
 import DivisiCsa from "../components/home/DivisiCsa";
 import Kegiatan from "../components/gallery/Kegiatan";
 import RecentActivities from "../components/gallery/RecentActivities";
+import Benefit from "../components/home/Benefit";
 
 const Home = () => {
   return (
     <div className="min-h-[1200px]">
       <Banner />
       <HomeCsa />
+      <Benefit />
       <Kegiatan />
       <RecentActivities />
       <TentangCsa />
