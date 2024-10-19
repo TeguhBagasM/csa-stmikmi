@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaInfoCircle, FaInstagram } from "react-icons/fa";
-import { AiOutlineMenu, AiOutlineClose, AiFillHome } from "react-icons/ai";
+import { FaInstagram } from "react-icons/fa";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import DarkModeSwitch from "./DarkModeSwitch";
 import Logo from "../../assets/images/logo-csa.png";
 
@@ -38,20 +38,7 @@ const Header = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex gap-8 items-center">
-          <Link
-            to="/"
-            className="relative md:flex items-center hover:text-blue-600 transition-colors duration-200 link-hover"
-          >
-            <AiFillHome className="mr-2 text-xl" /> Home
-          </Link>
-          <Link
-            to="/tentang-kami"
-            className="relative md:flex items-center hover:text-blue-600 transition-colors duration-200 link-hover"
-          >
-            <FaInfoCircle className="mr-2 text-xl" /> About CSA
-          </Link>
-        </nav>
+        <nav className="hidden md:flex gap-8 items-center"></nav>
 
         {/* Right Side Actions */}
         <div className="flex items-center gap-4">
@@ -85,26 +72,6 @@ const Header = () => {
       {/* Mobile Navigation */}
       {isMenuOpen && (
         <nav className="md:hidden mt-6 px-4">
-          <ul className="flex flex-col gap-4">
-            <li>
-              <Link
-                to="/"
-                onClick={toggleMenu}
-                className="flex items-center text-gray-800 dark:text-gray-200 dark:hover:text-blue-500 hover:text-blue-600 transition-colors duration-200"
-              >
-                <AiFillHome className="mr-2 text-xl" /> Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/tentang-kami"
-                onClick={toggleMenu}
-                className="flex items-center text-gray-800 dark:text-gray-200 dark:hover:text-blue-500 hover:text-blue-600 transition-colors duration-200"
-              >
-                <FaInfoCircle className="mr-2 text-xl" /> About Us
-              </Link>
-            </li>
-          </ul>
           <div className="mt-4 flex justify-center">
             <button
               onClick={handleFollow}
