@@ -69,7 +69,7 @@ const Header = () => {
               onClick={handleFollow}
               className="flex items-center bg-gray-100 dark:bg-gray-900 py-2 px-3 rounded-lg shadow-md hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors duration-200"
             >
-              <FaInstagram className="text-2xl" />
+              <InstagramGradientIcon />
             </button>
           </div>
         </div>
