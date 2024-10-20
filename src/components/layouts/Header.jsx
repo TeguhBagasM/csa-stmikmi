@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaInstagram } from "react-icons/fa";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import DarkModeSwitch from "./DarkModeSwitch";
 import Logo from "../../assets/images/logo-csa.png";
+import { FaInstagram } from "react-icons/fa";
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState(() => {
@@ -11,7 +10,18 @@ const Header = () => {
     return storedMode === "true" ? true : false;
   });
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+    localStorage.setItem("darkMode", darkMode);
+  }, [darkMode]);
+
+  const handleFollow = () => {
+    window.open("https://instagram.com/csa_stmikmi", "_blank");
+  };
 
   const InstagramGradientIcon = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -31,19 +41,6 @@ const Header = () => {
     </svg>
   );
 
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-    localStorage.setItem("darkMode", darkMode);
-  }, [darkMode]);
-
-  const handleFollow = () => {
-    window.open("https://instagram.com/csa_stmikmi", "_blank");
-  };
-
   return (
     <header className="py-6 mb-12 border-b bg-white border-gray-300 dark:border-gray-600 dark:bg-gray-950 z-40 dark:text-white">
       <div className="container mx-auto flex justify-between items-center px-4">
@@ -60,19 +57,19 @@ const Header = () => {
 
           <button
             onClick={handleFollow}
-            className="hidden md:flex items-center bg-blue-600 text-white py-2 px-3 rounded-lg shadow-md hover:bg-blue-800 transition-colors duration-200"
+            className="hidden md:flex items-center bg-gray-100 dark:bg-gray-900 py-2 px-3 rounded-lg shadow-md hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors duration-200"
           >
-            <FaInstagram className="text-xl mr-2" />
-            Follow Us
+            <InstagramGradientIcon />
+            <span className="ml-2 text-gray-900 dark:text-white">Follow Us</span>
           </button>
 
           {/* Mobile Menu Toggle */}
           <div className="md:hidden">
             <button
               onClick={handleFollow}
-              className="flex items-center text-gray-900 dark:text-white py-2 px-3 rounded-lg shadow-md hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors duration-200"
+              className="flex items-center bg-gray-100 dark:bg-gray-900 py-2 px-3 rounded-lg shadow-md hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors duration-200"
             >
-              <InstagramGradientIcon />
+              <FaInstagram className="text-2xl" />
             </button>
           </div>
         </div>
