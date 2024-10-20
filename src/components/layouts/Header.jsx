@@ -54,35 +54,15 @@ const Header = () => {
 
           {/* Mobile Menu Toggle */}
           <div className="md:hidden">
-            {isMenuOpen ? (
-              <AiOutlineClose
-                onClick={toggleMenu}
-                className="text-2xl cursor-pointer hover:text-blue-600 transition-colors duration-200"
-              />
-            ) : (
-              <AiOutlineMenu
-                onClick={toggleMenu}
-                className="text-2xl cursor-pointer hover:text-blue-600 transition-colors duration-200"
-              />
-            )}
+            <button
+              onClick={handleFollow}
+              className="flex items-center text-white py-2 px-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-200 bg-gradient-to-tr from-yellow-400 via-red-500 to-purple-500"
+            >
+              <FaInstagram className="text-xl" />
+            </button>
           </div>
         </div>
       </div>
-
-      {/* Mobile Navigation */}
-      {isMenuOpen && (
-        <nav className="md:hidden mt-6 px-4">
-          <div className="mt-4 flex justify-center">
-            <button
-              onClick={handleFollow}
-              className="flex items-center text-blue-600 dark:text-blue-500 hover:text-blue-800 transition-colors duration-200"
-            >
-              <FaInstagram className="text-xl mr-2" />
-              Follow Us
-            </button>
-          </div>
-        </nav>
-      )}
     </header>
   );
 };

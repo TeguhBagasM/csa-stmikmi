@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Image from "../../assets/images/banner.png";
 import Type from "./Type";
+import { generateQuotes } from "../../utils";
 
 const Banner = () => {
+  const [quote, setQuote] = useState({ text: "", author: "" });
+
+  useEffect(() => {
+    const quotes = generateQuotes();
+    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+    setQuote(randomQuote);
+  }, []);
+
   const handleDaftar = () => {
     window.open(
       "https://docs.google.com/forms/d/e/1FAIpQLSfTwQGgopuV7DHVV7IZ_ki_vcGjQ4JH9ASExY8nvIUr1l1hcw/viewform",
@@ -27,10 +36,16 @@ const Banner = () => {
           <div className="max-w-[440px] text-2xl font-medium mb-8 text-blue-500">
             <Type />
           </div>
+
+          <div className="max-w-[440px] mb-8 text-gray-700 dark:text-gray-300">
+            <p className="italic">"{quote.text}"</p>
+            <p className="text-right mt-2">- {quote.author}</p>
+          </div>
+
           <button
-            data-aos="zoom-in"
+            type="button"
             onClick={handleDaftar}
-            className="relative px-6 py-2 border-2 rounded-lg bg-white text-gray-950 font-semibold dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-300 animate-border-animate border-transparent shadow-lg shadow-blue-500/50 hover:shadow-blue-700/70 dark:hover:shadow-blue-500/70"
+            className="relative flex items-center px-6 py-2 border-1 rounded-full bg-white text-gray-950 font-semibold dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-300 animate-shadow-animate border-transparent"
           >
             Daftar Sekarang
           </button>
