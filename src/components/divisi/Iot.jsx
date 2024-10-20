@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../../assets/images/divisi/iot.png";
+import Image from "../../assets/images/divisi/iot.svg";
 
 const DivisiIot = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "../../assets/images/divisi/pemrograman.png";
+import Image from "../../assets/images/divisi/pemrograman.svg";
 
 const DivisiPemrograman = () => {
   return (
