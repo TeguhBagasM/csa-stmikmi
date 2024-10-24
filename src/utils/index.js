@@ -2,6 +2,8 @@ import programmingImg from "../assets/images/divisi/pemrograman.png";
 import iotImg from "../assets/images/divisi/iot.png";
 import multimediaImg from "../assets/images/divisi/mulmed.png";
 import gameDevImg from "../assets/images/divisi/game.jpg";
+import NoteverseImg from "../assets/images/projects/noteverse.png";
+import ThievshopImg from "../assets/images/projects/thievshop.png";
 
 const generateQuotes = () => [
   {
@@ -63,19 +65,19 @@ const projects = [
     description:
       "Noteverse adalah aplikasi catatan online yang dibangun dengan Next.js, TypeScript, dan Prisma sebagai ORM, menggunakan PostgreSQL untuk database.",
     tech: "Next.js / TypeScript / PostgreSQL / Prisma",
-    demoLink: "#",
-    githubLink: "#",
-    image: programmingImg,
+    demoLink: "https://noteverse-chi.vercel.app",
+    githubLink: "https://github.com/TeguhBagasM/noteverse",
+    image: NoteverseImg,
     id: "noteverse", // menambahkan id untuk routing
   },
   {
-    title: "CSA STMIK-MI",
+    title: "ThievShop",
     description:
-      "CSA (Creative Student Association) adalah organisasi berbasis TI yang terletak di STMIK Mardira Indonesia. Organisasi ini mencakup semua aspek TI.",
-    tech: "React.js / Tailwind",
-    demoLink: "#",
-    githubLink: "#",
-    image: iotImg,
+      "Thievshop adalah landing page e-commerce modern yang dibuat menggunakan React.js dan Vite, dengan Tailwind CSS untuk styling.",
+    tech: "React.js / Vite / Tailwind",
+    demoLink: "https://thievshop.vercel.app",
+    githubLink: null,
+    image: ThievshopImg,
     id: "csa-web", // menambahkan id untuk routing
   },
 ];
@@ -85,7 +87,7 @@ const projectsData = {
     title: "Noteverse",
     description:
       "Noteverse adalah aplikasi catatan online yang dibangun dengan Next.js, TypeScript, dan Prisma sebagai ORM, menggunakan PostgreSQL untuk database. Aplikasi ini memungkinkan pengguna untuk membuat, mengedit, dan mengorganisir catatan dengan mudah dan efisien.",
-    image: programmingImg,
+    image: NoteverseImg,
     demoLink: "#",
     githubLink: "#",
     tech: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "TailwindCSS"],
