@@ -46,15 +46,19 @@ const ProjectDetail = () => {
                   <FiExternalLink className="text-lg" />
                   Live Demo
                 </a>
-                <a
-                  href={project.githubLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-gray-900 text-white px-6 py-2 rounded-full font-medium hover:bg-gray-800 transition-colors"
-                >
-                  <FaGithub className="text-lg" />
-                  Source Code
-                </a>
+                {project.githubLink ? (
+                  <a
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 bg-gray-900 text-white px-6 py-2 rounded-full font-medium hover:bg-gray-800 transition-colors"
+                  >
+                    <FaGithub className="text-lg" />
+                    Source Code
+                  </a>
+                ) : (
+                  ""
+                )}
               </div>
             </div>
           </div>

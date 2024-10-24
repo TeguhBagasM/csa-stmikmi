@@ -88,8 +88,8 @@ const projectsData = {
     description:
       "Noteverse adalah aplikasi catatan online yang dibangun dengan Next.js, TypeScript, dan Prisma sebagai ORM, menggunakan PostgreSQL untuk database. Aplikasi ini memungkinkan pengguna untuk membuat, mengedit, dan mengorganisir catatan dengan mudah dan efisien.",
     image: NoteverseImg,
-    demoLink: "#",
-    githubLink: "#",
+    demoLink: "https://noteverse-chi.vercel.app",
+    githubLink: "https://github.com/TeguhBagasM/noteverse",
     tech: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "TailwindCSS"],
     features: [
       "Autentikasi pengguna",
@@ -118,12 +118,12 @@ const projectsData = {
     ],
   },
   thievshop: {
-    title: "CSA STMIK-MI",
+    title: "Thievshop",
     description:
       "Thievshop adalah landing page e-commerce modern yang dibuat menggunakan React.js dan Vite, dengan Tailwind CSS untuk styling. Halaman ini dirancang untuk memberikan pengguna pengalaman belanja yang elegan dan lancar. Thievshop menekankan kesederhanaan dan kenyamanan, dengan tata letak yang bersih dan navigasi yang intuitif.",
     image: ThievshopImg,
-    demoLink: "#",
-    githubLink: "#",
+    demoLink: "https://thievshop.vercel.app",
+    githubLink: null,
     tech: ["React.js", "Tailwind CSS", "Vite"],
     features: [
       "Responsive design",
