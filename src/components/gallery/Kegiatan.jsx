@@ -11,28 +11,28 @@ function Kegiatan() {
   const slides = [
     {
       url: slide_image_1,
-      title: "Kegiatan 1",
-      description: "Deskripsi Kegiatan 1",
+      title: "",
+      description: "",
     },
     {
       url: slide_image_2,
-      title: "Kegiatan 2",
-      description: "Deskripsi Kegiatan 2",
+      title: "",
+      description: "",
     },
     {
       url: slide_image_3,
-      title: "Kegiatan 3",
-      description: "Deskripsi Kegiatan 3",
+      title: "",
+      description: "",
     },
     {
       url: slide_image_4,
-      title: "Kegiatan 4",
-      description: "Deskripsi Kegiatan 4",
+      title: "",
+      description: "",
     },
     {
       url: slide_image_5,
-      title: "Kegiatan 5",
-      description: "Deskripsi Kegiatan 5",
+      title: "",
+      description: "",
     },
   ];
 

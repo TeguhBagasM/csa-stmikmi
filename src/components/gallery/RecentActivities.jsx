@@ -16,53 +16,53 @@ function RecentActivities() {
   const slides = [
     {
       url: slide_image_1,
-      title: "Kegiatan 1",
-      description: "Deskripsi Kegiatan 1",
+      title: "",
+      description: "",
     },
     {
       url: slide_image_2,
-      title: "Kegiatan 2",
-      description: "Deskripsi Kegiatan 2",
+      title: "",
+      description: "",
     },
     {
       url: slide_image_3,
-      title: "Kegiatan 3",
-      description: "Deskripsi Kegiatan 3",
+      title: "",
+      description: "",
     },
     {
       url: slide_image_4,
-      title: "Kegiatan 4",
-      description: "Deskripsi Kegiatan 4",
+      title: "",
+      description: "",
     },
     {
       url: slide_image_5,
-      title: "Kegiatan 5",
-      description: "Deskripsi Kegiatan 5",
+      title: "",
+      description: "",
     },
     {
       url: slide_image_6,
-      title: "Kegiatan 6",
-      description: "Deskripsi Kegiatan 6",
+      title: "",
+      description: "",
     },
     {
       url: slide_image_7,
-      title: "Kegiatan 7",
-      description: "Deskripsi Kegiatan 7",
+      title: "",
+      description: "",
     },
     {
       url: slide_image_8,
-      title: "Kegiatan 8",
-      description: "Deskripsi Kegiatan 8",
+      title: "",
+      description: "",
     },
     {
       url: slide_image_9,
-      title: "Kegiatan 9",
-      description: "Deskripsi Kegiatan 9",
+      title: "",
+      description: "",
     },
     {
       url: slide_image_10,
-      title: "Kegiatan 10",
-      description: "Deskripsi Kegiatan 10",
+      title: "",
+      description: "",
     },
   ];
 
