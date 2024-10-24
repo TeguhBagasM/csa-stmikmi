@@ -4,14 +4,11 @@ import Header from "./components/layouts/Header";
 import Footer from "./components/layouts/Footer";
 import Home from "./pages/Home";
 import { ToasterProvider } from "./providers/toast-provider";
-import TentangKami from "./pages/TentangKami";
-// import DivisiPemrograman from "./components/divisi/Pemrograman";
-// import DivisiGame from "./components/divisi/Game";
-// import DivisiIot from "./components/divisi/Iot";
-// import DivisiMultimedia from "./components/divisi/Multimedia";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 import OurProjects from "./components/projects/OurProjects";
+import ProjectDetail from "./components/projects/ProjectDetail";
 
 const App = () => {
   useEffect(() => {
@@ -30,10 +27,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<OurProjects />} />
-        {/* <Route path="/divisi-pemrograman" element={<DivisiPemrograman />} />
-        <Route path="/divisi-game" element={<DivisiGame />} />
-        <Route path="/divisi-iot" element={<DivisiIot />} />
-        <Route path="/divisi-multimedia" element={<DivisiMultimedia />} /> */}
+        <Route path="/projects/:id" element={<ProjectDetail />} />
       </Routes>
       <Footer />
     </div>

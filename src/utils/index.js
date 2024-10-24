@@ -57,4 +57,98 @@ const divisions = [
   },
 ];
 
-export { generateQuotes, divisions };
+const projects = [
+  {
+    title: "Noteverse",
+    description:
+      "Noteverse adalah aplikasi catatan online yang dibangun dengan Next.js, TypeScript, dan Prisma sebagai ORM, menggunakan PostgreSQL untuk database.",
+    tech: "Next.js / TypeScript / PostgreSQL / Prisma",
+    demoLink: "#",
+    githubLink: "#",
+    image: programmingImg,
+    id: "noteverse", // menambahkan id untuk routing
+  },
+  {
+    title: "CSA STMIK-MI",
+    description:
+      "CSA (Creative Student Association) adalah organisasi berbasis TI yang terletak di STMIK Mardira Indonesia. Organisasi ini mencakup semua aspek TI.",
+    tech: "React.js / Tailwind",
+    demoLink: "#",
+    githubLink: "#",
+    image: iotImg,
+    id: "csa-web", // menambahkan id untuk routing
+  },
+];
+
+const projectsData = {
+  noteverse: {
+    title: "Noteverse",
+    description:
+      "Noteverse adalah aplikasi catatan online yang dibangun dengan Next.js, TypeScript, dan Prisma sebagai ORM, menggunakan PostgreSQL untuk database. Aplikasi ini memungkinkan pengguna untuk membuat, mengedit, dan mengorganisir catatan dengan mudah dan efisien.",
+    image: programmingImg,
+    demoLink: "#",
+    githubLink: "#",
+    tech: ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "TailwindCSS"],
+    features: [
+      "Autentikasi pengguna",
+      "Real-time syncing",
+      "Markdown support",
+      "File attachment",
+      "Collaborative editing",
+      "Dark mode support",
+    ],
+    team: [
+      { name: "John Doe", role: "Lead Developer" },
+      { name: "Jane Smith", role: "UI/UX Designer" },
+      { name: "Mike Johnson", role: "Backend Developer" },
+    ],
+    timeline: [
+      { date: "Jan 2024", milestone: "Project Initiation" },
+      { date: "Feb 2024", milestone: "MVP Development" },
+      { date: "Mar 2024", milestone: "Beta Testing" },
+      { date: "Apr 2024", milestone: "Public Release" },
+    ],
+    challenges: [
+      "Implementing real-time collaboration",
+      "Optimizing performance untuk large notes",
+      "Handling offline functionality",
+      "Ensuring data security",
+    ],
+  },
+  "csa-web": {
+    title: "CSA STMIK-MI",
+    description:
+      "CSA (Creative Student Association) Website adalah platform digital yang merepresentasikan organisasi IT di STMIK Mardira Indonesia. Website ini dibangun dengan teknologi modern dan menyajikan informasi komprehensif tentang kegiatan, program, dan prestasi organisasi.",
+    image: iotImg,
+    demoLink: "#",
+    githubLink: "#",
+    tech: ["React.js", "Tailwind CSS", "Node.js", "MongoDB"],
+    features: [
+      "Responsive design",
+      "Dynamic content management",
+      "Event calendar",
+      "Member registration",
+      "Project showcase",
+      "Newsletter subscription",
+    ],
+    team: [
+      { name: "Alex Brown", role: "Frontend Developer" },
+      { name: "Sarah Wilson", role: "Content Manager" },
+      { name: "David Lee", role: "Backend Developer" },
+    ],
+    timeline: [
+      { date: "Nov 2023", milestone: "Design Phase" },
+      { date: "Dec 2023", milestone: "Frontend Development" },
+      { date: "Jan 2024", milestone: "Backend Integration" },
+      { date: "Feb 2024", milestone: "Launch" },
+    ],
+    challenges: [
+      "Creating intuitive navigation",
+      "Optimizing image loading",
+      "Implementing responsive design",
+      "Managing dynamic content",
+    ],
+  },
+};
+
+export { generateQuotes, divisions, projects, projectsData };

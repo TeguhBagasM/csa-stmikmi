@@ -3,34 +3,10 @@ import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
 import { IoArrowBack } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
-import programmingImg from "../../assets/images/divisi/pemrograman.png";
-import iotImg from "../../assets/images/divisi/iot.png";
+import { projects } from "../../utils";
 
 const OurProjects = () => {
   const navigate = useNavigate();
-
-  const projects = [
-    {
-      title: "Noteverse",
-      description:
-        "Noteverse adalah aplikasi catatan online yang dibangun dengan Next.js, TypeScript, dan Prisma sebagai ORM, menggunakan PostgreSQL untuk database.",
-      tech: "Next.js / TypeScript / PostgreSQL / Prisma",
-      demoLink: "#",
-      githubLink: "#",
-      image: programmingImg,
-      id: "noteverse", // menambahkan id untuk routing
-    },
-    {
-      title: "CSA STMIK-MI",
-      description:
-        "CSA (Creative Student Association) adalah organisasi berbasis TI yang terletak di STMIK Mardira Indonesia. Organisasi ini mencakup semua aspek TI.",
-      tech: "React.js / Tailwind",
-      demoLink: "#",
-      githubLink: "#",
-      image: iotImg,
-      id: "csa-web", // menambahkan id untuk routing
-    },
-  ];
 
   const handleBack = () => {
     navigate("/");
