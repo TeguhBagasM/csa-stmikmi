@@ -7,28 +7,28 @@ import ThievshopImg from "../assets/images/projects/thievshop.png";
 
 const generateQuotes = () => [
   {
-    text: "Kesuksesan seringkali ditemukan melalui banyak percobaan dan kegagalan.",
-    author: "Inspirator",
+    text: "Success is a lousy teacher. It seduces smart people into thinking they can't lose.",
+    author: "Bill Gates",
   },
   {
-    text: "Apa pun tantangannya, selalu ada cara untuk mengatasi dan berhasil. Yang penting adalah tidak menyerah.",
-    author: "Pemikir Hebat",
+    text: "The only way to do great work is to love what you do.",
+    author: "Steve Jobs",
   },
   {
-    text: "Lebih baik menjadi seseorang yang memiliki nilai daripada hanya mengejar kesuksesan.",
-    author: "Pencerah",
+    text: "Don't compare yourself with anyone in this world. If you do so, you are insulting yourself.",
+    author: "Bill Gates",
   },
   {
-    text: "Untuk mencapai hasil yang luar biasa, cintai apa yang Anda kerjakan.",
-    author: "Pelopor Inovasi",
+    text: "The question of whether computers can think is like the question of whether submarines can swim.",
+    author: "Edsger Dijkstra",
   },
   {
-    text: "Ide-ide baru tidak selalu langsung menunjukkan hasil yang baik.",
-    author: "Pencipta Ide",
+    text: "Any sufficiently advanced technology is indistinguishable from magic.",
+    author: "Arthur C. Clarke",
   },
   {
-    text: "Dimanapun Anda berada, jadilah yang terbaik dan berikan yang terbaik dari diri Anda.",
-    author: "Motivator",
+    text: "Sometimes it's the people no one imagines anything of who do the things that no one can imagine.",
+    author: "Alan Turing",
   },
 ];
 
