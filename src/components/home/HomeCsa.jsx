@@ -4,7 +4,7 @@ const HomeCsa = () => {
   return (
     <section
       data-aos="zoom-in"
-      className="bg-gradient-to-r mb-4 from-cyan-500 to-blue-600 dark:from-cyan-600 dark:to-blue-900 text-gray-100 py-12"
+      className="bg-gradient-to-r mb-4 from-blue-600 to-cyan-500 dark:from-blue-600 dark:to-cyan-600 text-gray-100 py-12"
     >
       <div data-aos="fade-up" className="max-w-7xl mx-auto px-4">
         <h2 data-aos="slide-bottom" className="text-4xl font-bold text-center">

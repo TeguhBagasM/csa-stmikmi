@@ -62,7 +62,7 @@ const Banner = () => {
               onClick={handleProjects}
               className="relative flex items-center px-6 py-2 border-1 rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold hover:gradient-to-r hover:from-cyan-500 hover:to-blue-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-300 border-transparent"
             >
-              Our Projects
+              Proyek Kami
             </button>
           </div>
         </div>

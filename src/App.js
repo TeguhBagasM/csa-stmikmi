@@ -11,6 +11,7 @@ import TentangKami from "./pages/TentangKami";
 // import DivisiMultimedia from "./components/divisi/Multimedia";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import OurProjects from "./components/projects/OurProjects";
 
 const App = () => {
   useEffect(() => {
@@ -28,7 +29,7 @@ const App = () => {
       <ToasterProvider />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<TentangKami />} />
+        <Route path="/projects" element={<OurProjects />} />
         {/* <Route path="/divisi-pemrograman" element={<DivisiPemrograman />} />
         <Route path="/divisi-game" element={<DivisiGame />} />
         <Route path="/divisi-iot" element={<DivisiIot />} />
