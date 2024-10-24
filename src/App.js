@@ -4,7 +4,7 @@ import Header from "./components/layouts/Header";
 import Footer from "./components/layouts/Footer";
 import Home from "./pages/Home";
 import { ToasterProvider } from "./providers/toast-provider";
-// import TentangKami from "./pages/TentangKami";
+import TentangKami from "./pages/TentangKami";
 // import DivisiPemrograman from "./components/divisi/Pemrograman";
 // import DivisiGame from "./components/divisi/Game";
 // import DivisiIot from "./components/divisi/Iot";
@@ -28,8 +28,8 @@ const App = () => {
       <ToasterProvider />
       <Routes>
         <Route path="/" element={<Home />} />
-        {/* <Route path="/tentang-kami" element={<TentangKami />} />
-        <Route path="/divisi-pemrograman" element={<DivisiPemrograman />} />
+        <Route path="/projects" element={<TentangKami />} />
+        {/* <Route path="/divisi-pemrograman" element={<DivisiPemrograman />} />
         <Route path="/divisi-game" element={<DivisiGame />} />
         <Route path="/divisi-iot" element={<DivisiIot />} />
         <Route path="/divisi-multimedia" element={<DivisiMultimedia />} /> */}

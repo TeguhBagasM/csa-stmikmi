@@ -2,9 +2,11 @@ import React, { useState, useEffect } from "react";
 import Image from "../../assets/images/banner.png";
 import Type from "./Type";
 import { generateQuotes } from "../../utils";
+import { useNavigate } from "react-router-dom";
 
 const Banner = () => {
   const [quote, setQuote] = useState({ text: "", author: "" });
+  const navigate = useNavigate();
 
   useEffect(() => {
     const quotes = generateQuotes();
@@ -17,6 +19,10 @@ const Banner = () => {
       "https://docs.google.com/forms/d/e/1FAIpQLSfTwQGgopuV7DHVV7IZ_ki_vcGjQ4JH9ASExY8nvIUr1l1hcw/viewform",
       "_blank"
     );
+  };
+
+  const handleProjects = () => {
+    navigate("/projects");
   };
 
   return (
@@ -42,13 +48,23 @@ const Banner = () => {
             <p className="text-right mt-2">- {quote.author}</p>
           </div>
 
-          <button
-            type="button"
-            onClick={handleDaftar}
-            className="relative flex items-center px-6 py-2 border-1 rounded-full bg-white text-gray-950 font-semibold dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-300 animate-shadow-animate border-transparent"
-          >
-            Daftar Sekarang
-          </button>
+          <div className="flex gap-4">
+            <button
+              type="button"
+              onClick={handleDaftar}
+              className="relative flex items-center px-6 py-2 border-1 rounded-full bg-white text-gray-950 font-semibold dark:bg-gray-950 dark:text-gray-100 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-300 animate-shadow-animate border-transparent"
+            >
+              Daftar Sekarang
+            </button>
+
+            <button
+              type="button"
+              onClick={handleProjects}
+              className="relative flex items-center px-6 py-2 border-1 rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold hover:gradient-to-r hover:from-cyan-500 hover:to-blue-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-300 border-transparent"
+            >
+              Our Projects
+            </button>
+          </div>
         </div>
 
         <div data-aos="zoom-in" className="flex-1 lg:flex justify-center items-center mt-8 lg:mt-0">
