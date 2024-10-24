@@ -16,8 +16,8 @@ const DivisiGame = () => {
             Game
           </h1>
           <p data-aos="zoom-in" className="max-w-[440px] mb-8 dark:text-gray-300">
-            Divisi Game berfokus pada pembuatan video game, mulai dari desain karakter hingga
-            pemrograman game menggunakan game engine seperti Unity dan Unreal Engine.
+            Game adalah Perangkat lunak interaktif yang dibuat untuk hiburan, melibatkan desain dan
+            pemrograman menggunakan game engine seperti Unity atau Unreal Engine.
           </p>
         </div>
 

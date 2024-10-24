@@ -16,9 +16,8 @@ const DivisiPemrograman = () => {
             Pemrograman
           </h1>
           <p data-aos="zoom-in" className="max-w-[440px] mb-8 dark:text-gray-300">
-            Divisi Pemrograman berfokus pada pengembangan keterampilan coding dan pembuatan aplikasi
-            berbasis web. Divisi ini belajar berbagai bahasa pemrograman seperti PHP, Javascript, dan
-            lainnya.
+            Pemrograman adalah Proses menulis kode untuk membuat perangkat lunak dan aplikasi yang
+            dijalankan oleh komputer menggunakan bahasa seperti PHP, Javascript, dan lainnya.
           </p>
         </div>
 

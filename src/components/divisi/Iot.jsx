@@ -16,9 +16,8 @@ const DivisiIot = () => {
             Internet of Things
           </h1>
           <p data-aos="zoom-in" className="max-w-[440px] mb-8 dark:text-gray-300">
-            Divisi IoT (Internet of Things) mengeksplorasi teknologi untuk menghubungkan perangkat
-            fisik dengan internet. Fokusnya adalah pada pengembangan sistem otomatisasi dan inovasi
-            berbasis IoT seperti smart home dan smart city.
+            IoT (Internet of Things) adalah Jaringan perangkat fisik yang saling terhubung dan
+            berkomunikasi melalui internet, seperti smart home dan perangkat kesehatan.
           </p>
         </div>
 

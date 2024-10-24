@@ -16,9 +16,8 @@ const DivisiMultimedia = () => {
             Multimedia
           </h1>
           <p data-aos="zoom-in" className="max-w-[440px] mb-8 dark:text-gray-300">
-            Divisi Multimedia bertujuan mengembangkan keterampilan desain grafis, animasi, fotografi,
-            dan video editing. Anggota belajar menggunakan berbagai tools kreatif untuk membuat konten
-            digital.
+            Multimedia adalah kombinasi teks, gambar, audio, video, dan animasi untuk menyajikan
+            informasi atau membuat konten interaktif, seperti video dan aplikasi.
           </p>
         </div>
 
