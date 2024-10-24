@@ -78,7 +78,7 @@ const projects = [
     demoLink: "https://thievshop.vercel.app",
     githubLink: null,
     image: ThievshopImg,
-    id: "csa-web", // menambahkan id untuk routing
+    id: "thievshop", // menambahkan id untuk routing
   },
 ];
 
@@ -117,14 +117,14 @@ const projectsData = {
       "Ensuring data security",
     ],
   },
-  "csa-web": {
+  thievshop: {
     title: "CSA STMIK-MI",
     description:
-      "CSA (Creative Student Association) Website adalah platform digital yang merepresentasikan organisasi IT di STMIK Mardira Indonesia. Website ini dibangun dengan teknologi modern dan menyajikan informasi komprehensif tentang kegiatan, program, dan prestasi organisasi.",
-    image: iotImg,
+      "Thievshop adalah landing page e-commerce modern yang dibuat menggunakan React.js dan Vite, dengan Tailwind CSS untuk styling. Halaman ini dirancang untuk memberikan pengguna pengalaman belanja yang elegan dan lancar. Thievshop menekankan kesederhanaan dan kenyamanan, dengan tata letak yang bersih dan navigasi yang intuitif.",
+    image: ThievshopImg,
     demoLink: "#",
     githubLink: "#",
-    tech: ["React.js", "Tailwind CSS", "Node.js", "MongoDB"],
+    tech: ["React.js", "Tailwind CSS", "Vite"],
     features: [
       "Responsive design",
       "Dynamic content management",

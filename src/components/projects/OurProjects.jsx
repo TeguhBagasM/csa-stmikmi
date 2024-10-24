@@ -54,15 +54,19 @@ const OurProjects = () => {
                     <FiExternalLink className="text-lg" />
                     Demo
                   </a>
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-white hover:bg-gray-100 text-gray-900 px-6 py-2 rounded-full font-medium transition-colors"
-                  >
-                    <FaGithub className="text-lg" />
-                    GitHub
-                  </a>
+                  {project.githubLink ? (
+                    <a
+                      href={project.githubLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 bg-white hover:bg-gray-100 text-gray-900 px-6 py-2 rounded-full font-medium transition-colors"
+                    >
+                      <FaGithub className="text-lg" />
+                      GitHub
+                    </a>
+                  ) : (
+                    ""
+                  )}
                 </div>
               </div>
 
