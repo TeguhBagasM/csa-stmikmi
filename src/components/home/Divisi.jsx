@@ -1,36 +1,6 @@
 import React, { useState } from "react";
-import programmingImg from "../../assets/images/divisi/pemrograman.png";
-import iotImg from "../../assets/images/divisi/iot.png";
-import multimediaImg from "../../assets/images/divisi/mulmed.png";
-import gameDevImg from "../../assets/images/divisi/game.jpg";
 import "aos/dist/aos.css";
-
-const divisions = [
-  {
-    title: "Divisi Pemrograman",
-    image: programmingImg,
-    description:
-      "Divisi Pemrograman berfokus pada pengembangan keterampilan coding dan pembuatan aplikasi berbasis web. Divisi ini belajar berbagai bahasa pemrograman seperti PHP, Javascript, dan lainnya.",
-  },
-  {
-    title: "Divisi IoT",
-    image: iotImg,
-    description:
-      "Divisi IoT (Internet of Things) mengeksplorasi teknologi untuk menghubungkan perangkat fisik dengan internet. Fokusnya adalah pada pengembangan sistem otomatisasi dan inovasi berbasis IoT seperti smart home dan smart city.",
-  },
-  {
-    title: "Divisi Multimedia",
-    image: multimediaImg,
-    description:
-      "Divisi Multimedia bertujuan mengembangkan keterampilan desain grafis, animasi, fotografi, dan video editing. Anggota belajar menggunakan berbagai tools kreatif untuk membuat konten digital.",
-  },
-  {
-    title: "Divisi Game",
-    image: gameDevImg,
-    description:
-      "Divisi Game berfokus pada pembuatan video game, mulai dari desain karakter hingga pemrograman game menggunakan game engine seperti Unity dan Unreal Engine.",
-  },
-];
+import { divisions } from "../../utils";
 
 const DivisiCsa = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -40,14 +10,7 @@ const DivisiCsa = () => {
   };
 
   return (
-    <section className="max-w-7xl mx-auto px-4 py-8">
-      <h2
-        className="text-4xl text-gray-900 dark:text-gray-100 font-bold text-center mb-10"
-        data-aos="fade-up"
-        data-aos-duration="1000"
-      >
-        Divisi CSA
-      </h2>
+    <section className="max-w-7xl mx-auto px-4 py-12 mb-8">
       <div className="grid gap-6 sm:grid-cols-1 lg:grid-cols-2">
         {divisions.map((division, index) => (
           <div

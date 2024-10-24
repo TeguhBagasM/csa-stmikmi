@@ -15,6 +15,7 @@ import "swiper/css"; // Gaya dasar Swiper
 import "swiper/css/navigation"; // Gaya untuk navigasi
 import "swiper/css/pagination"; // Gaya untuk pagination
 import DivisiCsa from "../components/home/DivisiCsa";
+import Divisi from "../components/home/Divisi";
 import Kegiatan from "../components/gallery/Kegiatan";
 import RecentActivities from "../components/gallery/RecentActivities";
 import Benefit from "../components/home/Benefit";
@@ -50,6 +51,7 @@ const Home = () => {
           <DivisiGame />
         </SwiperSlide>
       </Swiper>
+      <Divisi />
       <ScrollToTopButton />
     </div>
   );
