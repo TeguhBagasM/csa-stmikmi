@@ -2,11 +2,12 @@ import React, { useState, useEffect } from "react";
 import Image from "../../assets/images/banner.png";
 import Type from "./Type";
 import { generateQuotes } from "../../utils";
-import { useNavigate } from "react-router-dom";
+import toast from "react-hot-toast";
+// import { useNavigate } from "react-router-dom";
 
 const Banner = () => {
   const [quote, setQuote] = useState({ text: "", author: "" });
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   useEffect(() => {
     const quotes = generateQuotes();
@@ -15,15 +16,18 @@ const Banner = () => {
   }, []);
 
   const handleDaftar = () => {
-    window.open(
-      "https://docs.google.com/forms/d/e/1FAIpQLSfTwQGgopuV7DHVV7IZ_ki_vcGjQ4JH9ASExY8nvIUr1l1hcw/viewform",
-      "_blank"
-    );
+    toast.error("Pendaftaran sudah ditutup");
   };
+  // const handleDaftar = () => {
+  //   window.open(
+  //     "https://docs.google.com/forms/d/e/1FAIpQLSfTwQGgopuV7DHVV7IZ_ki_vcGjQ4JH9ASExY8nvIUr1l1hcw/viewform",
+  //     "_blank"
+  //   );
+  // };
 
-  const handleProjects = () => {
-    navigate("/projects");
-  };
+  // const handleProjects = () => {
+  //   navigate("/projects");
+  // };
 
   return (
     <section className="h-full max-h-[760px] mb-8 xl:mb-24 dark:bg-gray-950">
@@ -57,13 +61,13 @@ const Banner = () => {
               Daftar Sekarang
             </button>
 
-            <button
+            {/* <button
               type="button"
               onClick={handleProjects}
               className="relative flex items-center px-6 py-2 border-1 rounded-full bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold hover:gradient-to-r hover:from-cyan-500 hover:to-blue-600 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-300 border-transparent"
             >
               Proyek Kami
-            </button>
+            </button> */}
           </div>
         </div>
 
