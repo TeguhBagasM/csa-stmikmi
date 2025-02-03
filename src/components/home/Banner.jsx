@@ -15,15 +15,15 @@ const Banner = () => {
     setQuote(randomQuote);
   }, []);
 
-  // const handleDaftar = () => {
-  //   toast.error("Pendaftaran sudah ditutup");
-  // };
   const handleDaftar = () => {
-    window.open(
-      "https://docs.google.com/forms/d/e/1FAIpQLSfTwQGgopuV7DHVV7IZ_ki_vcGjQ4JH9ASExY8nvIUr1l1hcw/viewform",
-      "_blank"
-    );
+    toast.error("Pendaftaran belum dibuka");
   };
+  // const handleDaftar = () => {
+  //   window.open(
+  //     "https://docs.google.com/forms/d/e/1FAIpQLSfTwQGgopuV7DHVV7IZ_ki_vcGjQ4JH9ASExY8nvIUr1l1hcw/viewform",
+  //     "_blank"
+  //   );
+  // };
 
   // const handleProjects = () => {
   //   navigate("/projects");
