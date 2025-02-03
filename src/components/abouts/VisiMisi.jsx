@@ -30,7 +30,10 @@ const VisiMisi = () => {
             <h3 className="text-2xl font-semibold text-gray-700 dark:text-gray-200">Misi</h3>
             <ol className="mt-4 text-gray-600 dark:text-gray-400 text-left list-decimal list-inside">
               <li>Mengembangkan Potensi Anggota secara Kreatif</li>
-              <li>Mendorong Inovasi Lewat Proyek Kolaboratif.</li>
+              <li>
+                Mendorong Inovasi Lewat Proyek Kolaboratif: Menginisiasi proyek lintas divisi seperti
+                pengembangan aplikasi kreatif, game edukasi, multimedia interaktif, atau solusi IoT.
+              </li>
               <li>
                 Memperkenalkan Karya Anggota: Mengadakan kegiatan seperti pameran teknologi, lomba atau
                 kolaborasi dengan komunitas lain agar inovasi anggota CSA ini dikenal lebih luas.
