@@ -32,12 +32,17 @@ const VisiMisi = () => {
               <li>Mengembangkan Potensi Anggota secara Kreatif</li>
               <li>Mendorong Inovasi Lewat Proyek Kolaboratif.</li>
               <li>
-                Memperkenalkan Karya Anggota dengan mengadakan kegiatan seperti pameran teknologi,
-                lomba atau kolaborasi dengan komunitas lain agar inovasi anggota CSA ini dikenal lebih
-                luas.
+                Memperkenalkan Karya Anggota: Mengadakan kegiatan seperti pameran teknologi, lomba atau
+                kolaborasi dengan komunitas lain agar inovasi anggota CSA ini dikenal lebih luas.
               </li>
-              <li>Memperluas jaringan dan kemitraan dengan industri kreatif serta lembaga terkait.</li>
-              <li>Menggalang kesadaran sosial melalui kreativitas untuk isu-isu sosial dan budaya.</li>
+              <li>
+                Menciptakan Lingkungan Kolaboratif yang Inspiratif: Membentuk budaya komunitas yang
+                terbuka untuk eksplorasi ide-ide baru, diskusi kreatif, dan kerja sama antaranggota.
+              </li>
+              <li>
+                Menguatkan Solidaritas Antaranggota: mengoptimalkan kegiatan internal seperti diskusi
+                lintas divisi dan mendorong kerjasama yang lebih solid.
+              </li>
             </ol>
           </div>
         </div>
