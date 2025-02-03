@@ -16,9 +16,10 @@ const VisiMisi = () => {
           >
             <h3 className="text-2xl font-semibold text-gray-700 dark:text-gray-200">Visi</h3>
             <p className="mt-4 text-gray-600 dark:text-gray-400">
-              Menjadi penggerak utama dalam menginspirasi dan membangun komunitas mahasiswa kreatif
-              yang berdedikasi untuk mendorong inovasi, kolaborasi lintas disiplin, dan pengembangan
-              kreatif yang berkelanjutan. Menuju go internasional.
+              MMenjadikan CSA sebagai komunitas kreatif dan inovatif yang mendorong kolaborasi lintas
+              divisi untuk menghasilkan karya unggulan yang berdampak positif, relevan dengan
+              perkembangan teknologi, serta memberikan kontribusi nyata bagi kampus, masyarakat, dan
+              dunia industri.
             </p>
           </div>
 
@@ -28,9 +29,13 @@ const VisiMisi = () => {
           >
             <h3 className="text-2xl font-semibold text-gray-700 dark:text-gray-200">Misi</h3>
             <ol className="mt-4 text-gray-600 dark:text-gray-400 text-left list-decimal list-inside">
-              <li>Mengembangkan wadah kolaborasi untuk pertukaran ide antar mahasiswa kreatif.</li>
-              <li>Memfasilitasi pengembangan kreativitas dan acara inspiratif.</li>
-              <li>Mendorong inovasi berkelanjutan dengan dampak positif bagi masyarakat.</li>
+              <li>Mengembangkan Potensi Anggota secara Kreatif</li>
+              <li>Mendorong Inovasi Lewat Proyek Kolaboratif.</li>
+              <li>
+                Memperkenalkan Karya Anggota dengan mengadakan kegiatan seperti pameran teknologi,
+                lomba atau kolaborasi dengan komunitas lain agar inovasi anggota CSA ini dikenal lebih
+                luas.
+              </li>
               <li>Memperluas jaringan dan kemitraan dengan industri kreatif serta lembaga terkait.</li>
               <li>Menggalang kesadaran sosial melalui kreativitas untuk isu-isu sosial dan budaya.</li>
             </ol>
