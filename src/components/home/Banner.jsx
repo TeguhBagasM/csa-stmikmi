@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Image from "../../assets/images/banner.png";
 import Type from "./Type";
 import { generateQuotes } from "../../utils";
-// import toast from "react-hot-toast";
+import toast from "react-hot-toast";
 // import { useNavigate } from "react-router-dom";
 
 const Banner = () => {
